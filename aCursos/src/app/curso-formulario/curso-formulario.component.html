@@ -1,0 +1,24 @@
+
+<div *ngFor="let item of curso">
+  {{item}}
+</div>
+<p></p>
+<div class="container content">
+  <div class="row">    
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input name="nombre" class="form-control" #nombre>
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input name="edad" class="form-control" #edad>
+      </div>
+        <select name="miselect">
+          <option [value]="item" *ngFor="let item of curso">{{item}}</option>
+        </select>
+        <button type="submit" class="btn btn-primary" (click)="guardar(nombre.value,edad.value)">Guardar</button>
+    </form>    
+  </div>
+</div>
+<p>{{respuesta}}</p>
