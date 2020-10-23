@@ -1,3 +1,4 @@
+import { IEjemplo } from './../ejemplo';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjemplosComponent implements OnInit {
 
-  ejemplo = 'Suma';
+  ejemplo: IEjemplo = {
+    id : 1,
+    nombre : 'Matematica'
+  }
 
   constructor() {}
 

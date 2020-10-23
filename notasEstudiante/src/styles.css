@@ -1,0 +1,7 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.centro {    
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
