@@ -12,9 +12,9 @@ export class CursoFormularioComponent implements OnInit {
     descripcion:string,
     duracion:number,
     costo:number
-  };  
+  };
   cursos=[];
-  
+
   constructor() {
     this.curso = {
       nombre:null,
@@ -25,9 +25,9 @@ export class CursoFormularioComponent implements OnInit {
     this.cursos = [{nombre:'Java',descripcion:'Curso Nivel I',duracion:24,costo:15 },
     {nombre:'Oracle',descripcion:'Curso Nivel I',duracion:24,costo:12 },
     {nombre:'PHP',descripcion:'Curso Nivel I',duracion:24,costo:10 },
-    {nombre:'Java2',descripcion:'Curso Nivel 2',duracion:42,costo:18 }]  
+    {nombre:'Java2',descripcion:'Curso Nivel 2',duracion:42,costo:18 }]
   }
-  
+
   cantCursos(){
     return this.cursos.length>0;
   }
@@ -51,15 +51,15 @@ export class CursoFormularioComponent implements OnInit {
       {
         alert('El Curso ya está Registrado');
         return;
-      } 
-    }       
+      }
+    }
     this.cursos.push({nombre:this.curso.nombre,
                       descripcion:this.curso.descripcion,
                       duracion:this.curso.duracion,
                       costo:this.curso.costo });
     this.curso.nombre=null;
     this.curso.descripcion=null;
-    this.curso.duracion=0;    
+    this.curso.duracion=0;
     this.curso.costo=0;
   }
   modificarCurso(){}
