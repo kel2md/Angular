@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class BalotaComponent implements OnInit {
   //Recibe Valor del Componente padre
-  @Input() valor : number;
+  @Input() valor : number; 
   
   constructor() { }
 
