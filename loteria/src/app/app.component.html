@@ -10,7 +10,7 @@
 <hr>
 <h2>{{ numeroGanador }}</h2>
 <hr>
-<app-par-impar valor="{{ suma }}" (parImpar)="llamarParImpar($event)" #calculo>hola</app-par-impar>
+<app-par-impar [valor]="suma" (parImpar)="llamarParImpar($event)" #calculo>hola</app-par-impar>
 
 <div><h3>{{mensaje}}</h3></div>
 <hr>
